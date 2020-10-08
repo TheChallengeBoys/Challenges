@@ -30,12 +30,17 @@ aside {
     float: right;
     width: 60%
     }
-table {
+aside table {
     border: 1px solid black;
     border-collapse: collapse;
     margin-left: 1em;
     margin-top: 1em;
-    position: fixed;
+    position: inherit;
+}
+main table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: inherit;
 }
 th, td {
     border: 2px solid black;
@@ -67,9 +72,15 @@ th {
         }
     body {
         border: none;}
-    table {
+    #records {
         position: static;
         margin-bottom: .5em;
+        font-size: 12pt;
+    }
+    #stats {
+        position: static;
+        margin-bottom: 1em;
+        font-size: 6.5pt;
     }
     aside {
         float: none;}
